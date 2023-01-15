@@ -1,8 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
-import { Repo } from "../types/api";
 
 export const useFetch = (url: string, options: {}) => {
-  const [response, setResponse] = useState<Repo[]>([]);
+  const [response, setResponse] = useState<any>([]);
   const [loading, setLoading] = useState(false);
 
   const memorizeState = useCallback(() => {
